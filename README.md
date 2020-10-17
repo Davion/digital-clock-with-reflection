@@ -1,3 +1,3 @@
 Simple Design Digital Clock
 
-digital-clock-with-reflection.png
+![Digital-Clock-Image](https://github.com/Davion/digital-clock-with-reflection/blob/master/digital-clock-with-reflection.png)
