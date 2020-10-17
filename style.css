@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #efefef;
+}
+
+
+.main div{
+	background: #fff;
+	color: #111;
+	width: 140px;
+	height: 140px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+	margin: 5px;
+	-webkit-box-reflect: below 10px linear-gradient(transparent 0%, white);
+	border-radius: 10px;
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px -3px #000;
+}
+
+.main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#h, #m, #s{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	line-height: 40px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+	width: 100%;
+	height: 40px;
+	background: #111;
+	color: #fff;
+}
+
+#hour, #minute, #second{
+	font-size: 4.5rem;
+}
+
+
+@-moz-document url-prefix(){
+	.main{
+		width: 450px;
+		flex-wrap: wrap;
+	}
+	.reflected{
+		display: inline !important;
+		-moz-transform: scaleY(-1);
+		box-shadow: 0 0px 0px 0px #fff !important;
+		mask: linear-gradient( transparent 0%, white);
+	}
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>Digital Clock</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="main">
+		<div id="reflectHour">
+			<span id="hour"></span>
+			<span id="h">Hour</span>
+		</div>
+		<div id="reflectMinute">
+			<span id="minute"></span>
+			<span id="m">Minute</span>
+		</div>
+		<div id="reflectSecond">
+			<span id="second"></span>
+			<span id="s">Second</span>
+		</div>
+		<div class="reflected" style="background: -moz-element(#reflectHour); display: none;"></div>
+		<div class="reflected" style="background: -moz-element(#reflectMinute); display: none;"></div>
+		<div class="reflected" style="background: -moz-element(#reflectSecond); display: none;"></div>
+	</div>
+
+<script type="text/javascript" src="timeFunction.js"></script>
+</body>
+</html>
